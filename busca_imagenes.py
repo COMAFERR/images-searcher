@@ -15,7 +15,7 @@ def copiar_imagenes(csv, carpeta_imagenes, carpeta_destino):
         # next(cabecera)  # Saltar la primera fila si contiene encabezados
 
         for linea in file:
-            id_producto = (linea.split(";")[3].strip())  # Suponiendo que el ID del producto está en la primera columna
+            id_producto = (linea.split(";")[1].strip())  # Suponiendo que el ID del producto está en la primera columna
             nombre_imagen = f"{id_producto}.jpg"  # Nombre de archivo de la imagen
             
             # Comprobar si la imagen existe en la carpeta de imágenes
